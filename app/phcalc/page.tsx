@@ -28,7 +28,7 @@ export default function Home() {
             </p>
             <p className="para pb-1 max-w-xl">
                 The acid(HX) added ionizes to <Latex>$H^+$ and $X^-$</Latex>, <Latex>$mol$ $H^+$</Latex> can be 
-                found from the acids's equilibrium expression
+                found from the acid&apos;s equilibrium expression
             </p>
             <p className="para pb-1 max-w-xl">
                 Then, determine <Latex>$[HA]$ and $[A^-]$ from $H^+$+ $A^-\rightarrow$$HA$</Latex>(accounting for the change in volume)
