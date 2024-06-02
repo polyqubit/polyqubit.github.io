@@ -1,7 +1,17 @@
+'use client'
+
 import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
+import { list } from "./data";
 
 export default function Home() {
+    const [num, setNum] = useState(0);
+    function handleClick(n:number) {
+        setNum(n);
+        // console.log(num);
+    }
+    let current = list[num];
     return (
         <main>
             <p className="text-5xl h-16">Titration</p>
@@ -13,18 +23,21 @@ export default function Home() {
             </p>
             <ul>
                 <li>
-                    <button className="button">Indicators</button>
+                    <button onClick={()=>handleClick(1)} className="button">Indicators</button>
                 </li>
                 <li>
-                    <button className="button">Strong Acid/Strong Base</button>
+                    <button onClick={()=>handleClick(2)} className="button">Strong Acid-Strong Base</button>
                 </li>
                 <li>
-                    <button className="button">Weak Acid/Strong Base</button>
+                    <button onClick={()=>handleClick(3)} className="button">Weak Acid-Strong Base</button>
                 </li>
                 <li>
-                    <button className="button">Polyprotic Acids</button>
+                    <button onClick={()=>handleClick(4)} className="button">Polyprotic Acids</button>
                 </li>
             </ul>
+            <p>
+                {current.text}
+            </p>
         </main>
     );
 }
