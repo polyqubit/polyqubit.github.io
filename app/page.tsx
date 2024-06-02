@@ -13,6 +13,9 @@ export default function Home() {
         <li>
           <Link className="link" href="/phcalc">pH Calculations</Link>
         </li>
+        <li>
+          <Link className="link" href="/titration">Titration</Link>
+        </li>
       </ul>
     </main>
   );
