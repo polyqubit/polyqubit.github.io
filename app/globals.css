@@ -31,3 +31,24 @@ body {
     text-wrap: balance;
   }
 }
+
+@layer components {
+  .link {
+    @apply border-2;
+    @apply border-white;
+    @apply size-16;
+    @apply p-1;
+  }
+  .para {
+    @apply text-xl;
+    @apply max-w-96;
+    @apply leading-relaxed;
+    @apply pb-8;
+  }
+}
+
+@layer base {
+  li {
+    @apply pb-4;
+  }
+}
