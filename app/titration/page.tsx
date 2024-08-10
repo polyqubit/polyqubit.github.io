@@ -23,8 +23,8 @@ export default function Home() {
             <p className="para pb-1">
                 Info on titration
             </p>
-            <div className="">
-                <ul className="pr-4 inline-block">
+            <div className="flex">
+                <ul className="top-0 pr-4 inline-block">
                     <li>
                         <button onClick={() => handleClick(1)} className="button">Indicators</button>
                     </li>
@@ -44,7 +44,7 @@ export default function Home() {
                         <button onClick={() => handleClick(6)} className="button">Polyprotic Acids</button>
                     </li>
                 </ul>
-                <div className="top-0 max-w-1/2 border-2 p-1 border-stone-500 inline-block display-flex">
+                <div className="max-w-fit border-2 p-1 border-stone-500 inline-block display-flex">
                     <Latex strict>
                         {current.text}
                     </Latex>
